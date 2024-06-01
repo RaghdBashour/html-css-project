@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(28, 27, 27);
+}
+
+/* header section */
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.menu {
+  margin: 10px;
+  width: 80%;
+}
+
+.menu nav ul {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu nav ul li {
+  font-size: 22px;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.menu nav ul li a:hover {
+  border-bottom: 3px solid white;
+}
+/* conatinor section */
+.conatinor {
+  display: flex;
+  align-items: center;
+  margin: 10px 30px 10px 30px;
+  height: 100vh;
+  background-image: linear-gradient(to right, #00000088 30%, transparent),
+    url(../images/profilio2.jpg);
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  border: 3px solid transparent;
+}
+
+.pro h1 {
+  margin-bottom: 20px;
+  font-size: 120px;
+  font-style: italic;
+}
+
+.pro p {
+  padding: 10px;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/* categories section */
+.all {
+  margin: 25px 10px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.all a {
+  background-color: rgb(255, 255, 255, 0.18);
+  padding: 20px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.all a:active {
+  background-color: rgb(28, 27, 27);
+}
+
+/* content section */
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 100%;
+  margin: 0 30px 0 30px;
+}
+
+  /* boxes general style start */
+.boxes {
+  width: 300px;
+  height: 400px;
+  padding: 0 10px 0 10px;
+  margin: 25px 10px 0 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: end;
+  border: 3px solid black;
+}
+
+.boxes .c h2 {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.boxes .c p {
+  color: red;
+  padding-left: 10px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.boxes .c p span {
+  font-size: 40px;
+  color: red;
+}
+
+:root {
+  --mainGradiant: linear-gradient(to top, rgb(28, 27, 27) 30%, #00000088);
+  --HoverGradiant: linear-gradient(to top,rgb(28, 27, 27) 30%,transparent);
+}
+  /* boxes general style end */
+
+#box1 {
+  background-image: var(--mainGradiant), url(../images/pubg-theme2.jpg);
+}
+
+#box1:hover {
+  background-image: var(--HoverGradiant), url(../images/pubg-theme2.jpg);
+  cursor: pointer;
+}
+
+#box2 {
+  background-image: var(--mainGradiant), url(../images/ea24jpg.jpg);
+}
+
+#box2:hover {
+  background-image: var(--HoverGradiant), url(../images/ea24jpg.jpg);
+  cursor: pointer;
+}
+#box3 {
+  background-image: var(--mainGradiant), url(../images/GTAV.jpg);
+}
+#box3:hover {
+  background-image: var(--HoverGradiant), url(../images/GTAV.jpg);
+  cursor: pointer;
+}
+
+#box4 {
+  background-image: var(--mainGradiant), url(../images/cs_go.jpg);
+}
+
+#box4:hover {
+  background-image: var(--HoverGradiant), url(../images/cs_go.jpg);
+  cursor: pointer;
+}
+
+#box5 {
+  background-image: var(--mainGradiant), url(../images/fortnitepng.png);
+}
+
+#box5:hover {
+  background-image: var(--HoverGradiant), url(../images/fortnitepng.png);
+  cursor: pointer;
+}
+#box6 {
+  background-image: var(--mainGradiant), url(../images/cuphead.jpg);
+}
+
+#box6:hover {
+  background-image: var(--HoverGradiant), url(../images/cuphead.jpg);
+  cursor: pointer;
+}
+#box7 {
+  background-image: var(--mainGradiant), url(../images/halo.jpg);
+}
+
+#box7:hover {
+  background-image: var(--HoverGradiant), url(../images/halo.jpg);
+  cursor: pointer;
+}
+#box8 {
+  background-image: var(--mainGradiant), url(../images/gta_san.jpg);
+}
+
+#box8:hover {
+  background-image: var(--HoverGradiant), url(../images/gta_san.jpg);
+  cursor: pointer;
+}
+
+/* contact us section */
+.contact {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact h2 {
+  margin: 10px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.contact hr {
+  margin-bottom: 60px;
+  width: 600px;
+}
+
+.contact .num {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .num a {
+  text-decoration: none;
+  font-size: 25px;
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.contact .num a:hover {
+  border-bottom: 3px solid white;
+}
